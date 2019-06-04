@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <modulbank>
+                <model>Modulbank\PaymentGateway\Model\Modulbank</model>
+                <group>offline</group>
+                <active>1</active>
+                <title>Modulbank</title>
+                <test_mode>1</test_mode>
+                <merchant/>
+                <secret_key />
+                <test_secret_key />
+                <sno>usn</sno>
+                <vat>none</vat>
+                <delivery_vat>none</delivery_vat>
+                <payment_object>commodity</payment_object>
+                <delivery_payment_object>service</delivery_payment_object>
+                <payment_method>full_prepayment</payment_method>
+                <success_url>modulbank/checkout/success</success_url>
+                <fail_url>modulbank/checkout/failure</fail_url>
+                <cancel_url>modulbank/checkout/failure</cancel_url>
+                <logging>0</logging>
+                <max_log_size>10</max_log_size>
+            </modulbank>
+        </payment>
+    </default>
+</config>
